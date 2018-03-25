@@ -25,6 +25,9 @@ twitter_username: TomislavEric
 github_username:  tomislaveric
 
 # Build settings
+collections: 
+  cheatsheets:
+    output: true
 kramdown: 
   input: GFM
 theme: minima
