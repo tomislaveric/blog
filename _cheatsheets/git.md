@@ -14,6 +14,6 @@ git branch -b branchName
 git checkout master && git merge develop
 //Reset modified file
 git checkout HEAD -- fileToReset
-//Show nice git history overview
-git log --all --decorate --oneline --graph
+//Show nice, colorful git history overview
+git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 {% endhighlight %}
