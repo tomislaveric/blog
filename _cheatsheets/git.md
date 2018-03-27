@@ -15,5 +15,5 @@ git checkout master && git merge develop
 //Reset modified file
 git checkout HEAD -- fileToReset
 //Show nice, colorful git history overview
-git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+git log -n 20 --reverse --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
 {% endhighlight %}
