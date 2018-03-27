@@ -1,8 +1,9 @@
 ---
-layout: default
-title:  "Git cheetsheat with some nice and useful commands"
+layout: page
+title:  "Git cheetsheat"
 categories: cheatsheets git
 ---
+A collection of git commands for you daily work.
 {% highlight csharp %}
 //Add all files you want to commit
 git add . || git add singleFile
@@ -14,6 +15,14 @@ git branch -b branchName
 git checkout master && git merge develop
 //Reset modified file
 git checkout HEAD -- fileToReset
-//Show nice, colorful git history overview
-git log -n 20 --reverse --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+{% endhighlight %}
+
+You can create a git alias for long git commands. Just add this, for example, to .gitconfig in HOME
+{% highlight csharp %}
+[alias]
+    lg = log -n 20 --reverse --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+{% endhighlight %}
+{% highlight csharp %}
+//Short alias displays nice, colorful git history overview
+git lg
 {% endhighlight %}
