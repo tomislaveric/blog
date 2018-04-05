@@ -26,6 +26,8 @@ github_username:  tomislaveric
 
 # Build settings
 collections: 
+  footer:
+    output: true
   cheatsheets:
     output: true
 kramdown: 
